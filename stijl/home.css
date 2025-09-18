@@ -72,29 +72,7 @@
   margin: 0 auto;
 }
 
-.mascot {
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(135deg, #8b4a9c, #6b3a7c);
-  border-radius: 50%;
-  margin: 0 auto 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3em;
-  box-shadow: 0 10px 30px rgba(139, 74, 156, 0.3);
-  animation: float 3s ease-in-out infinite;
-}
 
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
 
 .join-button {
   background: linear-gradient(135deg, #ff9800, #f57c00);
@@ -117,22 +95,13 @@
   box-shadow: 0 8px 25px rgba(255, 152, 0, 0.5);
 }
 
-.groepen h2 {
-  color: #6b3a7c;
-  font-size: 3em;
-  margin-bottom: 40px;
-  font-weight: 900;
+.groeph2{
+    color: white;
+    font-size: xx-large ;
 }
 
 /* SVG Characters positioned exactly like reference */
-.svg-characters r {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 60px;
-  margin: 40px 0 60px 0;
-  position: relative;
-}
+
 
 .character-svg-man {
   width: 50vw;
@@ -150,20 +119,12 @@
 .groep-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  gap: 10px;
+  
   margin-top: 40px;
 }
 
-.groep {
-  background: white;
-  border-radius: 20px;
-  width: 280px;
-  overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border: 3px solid transparent;
-}
+
 
 .groep:hover {
   transform: translateY(-10px);
@@ -185,12 +146,22 @@
     justify-content: center;
     align-items: center;
     font-size: x-large;
+    color: white;
+    gap: 1vw;
 }
 
 .beverText h2 {
   color: red;
   text-align: center;
   font-size: xx-large;
+}
+
+.animal-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
 }
 
 .bevers a {
@@ -220,10 +191,7 @@
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
 }
 
-.groep-content {
-  padding: 25px;
-  text-align: center;
-}
+
 
 .groep h3 {
   font-size: 1.5em;
@@ -282,8 +250,8 @@
 
 .animal {
   background-color: white;
-  width: 20vw;
-  height: 13vw;
+  width: 27vw;
+  height: 17vw;
   border-radius: 1vw;
   border: 5px solid;
 }
