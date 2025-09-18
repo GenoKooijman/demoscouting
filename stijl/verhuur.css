@@ -1,0 +1,31 @@
+/* Rental/Equipment page specific styles (verhuur.html) */
+
+/* Equipment/Verhuur styles */
+.verhuur-categorie {
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  border-left: 5px solid #663399;
+}
+
+.verhuur-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.verhuur-item:last-child {
+  border-bottom: none;
+}
+
+.verhuur-item strong {
+  color: #663399;
+}
+
+.prijs {
+  color: #663399;
+  font-weight: bold;
+}

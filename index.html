@@ -1,107 +1,134 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Die Wiltgraeff - Scouting Wageningen</title>
-  <link rel="stylesheet" href="stijl/style.css">
-</head>
-<body>
-  <header>
-    <div class="header-content">
-      <div class="logo">
-        <div class="logo-icon">⚜️</div>
-        <div class="logo-text">Die Wiltgraeff</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Die Wiltgraeff - Scouting Wageningen</title>
+    <link rel="stylesheet" href="stijl/base.css" />
+    <link rel="stylesheet" href="stijl/home.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <div class="logo-icon">⚜️</div>
+          <div class="logo-text">Die Wiltgraeff</div>
+        </div>
+        <nav>
+          <a href="index.html" class="active">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="nieuws.html">Nieuws</a>
+          <a href="smoelenboek.html">Smoelenboek</a>
+          <a href="spelletaken.html">Spelletaken</a>
+          <a href="verhuur.html">Verhuur</a>
+        </nav>
       </div>
-      <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="nieuws.html">Nieuws</a>
-        <a href="smoelenboek.html">Smoelenboek</a>
-        <a href="spelletaken.html">Spelletaken</a>
-        <a href="verhuur.html">Verhuur</a>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Die Wiltgraeff</h1>
-      <p>Welkom bij Scouting Die Wiltgraeff in Wageningen!</p>
-      <p>Al sinds 1924 bieden wij kinderen en jongeren de kans om te groeien, vrienden te maken en avontuur te beleven in de prachtige natuur.</p>
-      <a href="contact.html" class="button">Word lid!</a>
-    </div>
-  </section>
-
-  <section class="groepen">
-    <div class="groepen-content">
-      <div class="mascot">🏴‍☠️</div>
-      
-      <a href="contact.html" class="join-button">Wordt lid van onze groep</a>
-      
-      <h2>Onze Spelgroepen</h2>
-      
-      <!-- SVG Characters positioned exactly like in reference -->
-      <div class="svg-characters">
-        <img src="afbeeldingen/Jongen.svg" alt="Scout Jongen" class="character-svg">
-        <img src="afbeeldingen/Meisje.svg" alt="Scout Meisje" class="character-svg">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Die Wiltgraeff</h1>
+        <p>Welkom bij Scouting Die Wiltgraeff in Wageningen!</p>
+        <p>
+          Al sinds 1924 bieden wij kinderen en jongeren de kans om te groeien,
+          vrienden te maken en avontuur te beleven in de prachtige natuur.
+        </p>
       </div>
-      
-      <div class="groep-container">
-        <div class="groep bevers">
-          <div class="groep-image">🦫</div>
-          <div class="groep-content">
-            <h3>Bevers</h3>
-            <div class="groep-age">5 - 7 jaar</div>
-            <a href="spelletaken.html" class="groep-button rood">Meer info</a>
+      <div class="buttonLayerH">
+        <a href="contact.html" class="homeButton">Word lid!</a>
+      </div>
+    </section>
+
+    <section class="groepen">
+      <div class="groepen-content">
+        <div class="mascot">🏴‍☠️</div>
+
+        <a href="contact.html" class="join-button">Wordt lid van onze groep</a>
+
+        <h2>Onze Spelgroepen</h2>
+
+        <!-- SVG Characters positioned exactly like in reference -->
+        <div class="svg-characters">
+          <img
+            src="afbeeldingen/Jongen.svg"
+            alt="Scout Jongen"
+            class="character-svg"
+          />
+          <img
+            src="afbeeldingen/Meisje.svg"
+            alt="Scout Meisje"
+            class="character-svg"
+          />
+        </div>
+
+        <div class="groep-container">
+          <div class="groep bevers">
+            <div class="groep-image">🦫</div>
+            <div class="groep-content">
+              <h3>Bevers</h3>
+              <div class="groep-age">5 - 7 jaar</div>
+              <a href="spelletaken.html" class="groep-button rood">Meer info</a>
+            </div>
+          </div>
+
+          <div class="groep welpen">
+            <div class="groep-image">🐺</div>
+            <div class="groep-content">
+              <h3>Welpen</h3>
+              <div class="groep-age">7 - 11 jaar</div>
+              <a href="spelletaken.html" class="groep-button groen"
+                >Meer info</a
+              >
+            </div>
+          </div>
+
+          <div class="groep scouts">
+            <div class="groep-image">🏕️</div>
+            <div class="groep-content">
+              <h3>Scouts</h3>
+              <div class="groep-age">11 - 15 jaar</div>
+              <a href="spelletaken.html" class="groep-button oranje"
+                >Meer info</a
+              >
+            </div>
           </div>
         </div>
-        
-        <div class="groep welpen">
-          <div class="groep-image">🐺</div>
-          <div class="groep-content">
-            <h3>Welpen</h3>
-            <div class="groep-age">7 - 11 jaar</div>
-            <a href="spelletaken.html" class="groep-button groen">Meer info</a>
-          </div>
-        </div>
-        
-        <div class="groep scouts">
-          <div class="groep-image">🏕️</div>
-          <div class="groep-content">
-            <h3>Scouts</h3>
-            <div class="groep-age">11 - 15 jaar</div>
-            <a href="spelletaken.html" class="groep-button oranje">Meer info</a>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="beelden">
-    <div class="beelden-content">
-      <h2>Die Wiltgraeff in Beeld</h2>
-      <div class="beelden-grid">
-        <img src="afbeeldingen/Foto 16-05-2020 15 18 55.jpg" alt="Scouting activiteit">
-        <img src="afbeeldingen/Foto 16-05-2020 15 25 46.jpg" alt="Scouting groep">
-        <img src="afbeeldingen/IMG_4490.JPG" alt="Scouting kamp">
-        <img src="afbeeldingen/NPK 2017 Bevers _MG_2749.jpg" alt="Bevers activiteit">
+    <section class="beelden">
+      <div class="beelden-content">
+        <h2>Die Wiltgraeff in Beeld</h2>
+        <div class="beelden-grid">
+          <img
+            src="afbeeldingen/Foto 16-05-2020 15 18 55.jpg"
+            alt="Scouting activiteit"
+          />
+          <img
+            src="afbeeldingen/Foto 16-05-2020 15 25 46.jpg"
+            alt="Scouting groep"
+          />
+          <img src="afbeeldingen/IMG_4490.JPG" alt="Scouting kamp" />
+          <img
+            src="afbeeldingen/NPK 2017 Bevers _MG_2749.jpg"
+            alt="Bevers activiteit"
+          />
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <div class="footer-content">
-      <div class="footer-mascot">🏴‍☠️</div>
-      <div>
-        <p>&copy; 2024 Scouting Die Wiltgraeff Wageningen</p>
-        <p>Samen op avontuur sinds 1924</p>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-mascot">🏴‍☠️</div>
+        <div>
+          <p>&copy; 2024 Scouting Die Wiltgraeff Wageningen</p>
+          <p>Samen op avontuur sinds 1924</p>
+        </div>
+        <div class="footer-logo">
+          <div class="footer-logo-icon">⚜️</div>
+          <span>Die Wiltgraeff</span>
+        </div>
       </div>
-      <div class="footer-logo">
-        <div class="footer-logo-icon">⚜️</div>
-        <span>Die Wiltgraeff</span>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
