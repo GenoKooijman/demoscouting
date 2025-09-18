@@ -19,8 +19,12 @@ header {
   background: rgba(109, 59, 126);
   backdrop-filter: blur(10px);
   padding: 15px 0;
- color: white;
+  color: white;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  overflow: visible;
 }
 
 .header-content {
@@ -37,6 +41,8 @@ header {
   display: flex;
   align-items: center;
   gap: 15px;
+  position: relative;
+  z-index: 10;
 }
 
 .logo-icon {
@@ -51,10 +57,32 @@ header {
   box-shadow: 0 4px 15px rgba(139, 74, 156, 0.3);
 }
 
+.logo-icon-container {
+  width: 100px;
+  height: 100px;
+  background: rgba(109, 59, 126, 1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(109, 59, 126, 0.6);
+  padding: 12px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  transform: translateY(20px);
+  margin-bottom: -20px;
+}
+
+.logo-svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
 .logo-text {
   font-size: 1.8em;
   font-weight: bold;
- 
+  transform: translateY(-10px);
 }
 
 /* Navigation exactly like reference */
