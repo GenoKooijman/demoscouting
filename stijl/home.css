@@ -4,7 +4,7 @@
 .hero {
   background: url("../afbeeldingen/Foto 16-05-2020 15 18 55.jpg") center/cover;
 
-  height: 80vh;
+  height: 100vh;
   display: flex;
 
   position: relative;
@@ -27,10 +27,10 @@
   color: white;
 }
 
-.buttonLayerH{
-    display: flex;
-    justify-content: center;
-    margin-top: 6vw;
+.buttonLayerH {
+  display: flex;
+  justify-content: center;
+  margin-top: 6vw;
 }
 
 .homeButton {
@@ -61,15 +61,12 @@
 
 /* Groups section exactly like reference */
 .groepen {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
   padding: 80px 20px;
   margin: 50px 20px;
-  border-radius: 30px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+
   text-align: center;
 }
-
+    
 .groepen-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -128,7 +125,7 @@
 }
 
 /* SVG Characters positioned exactly like reference */
-.svg-characters {
+.svg-characters r {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -137,11 +134,12 @@
   position: relative;
 }
 
-.character-svg {
-  width: 150px;
-  height: 150px;
-  filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.15));
-  transition: all 0.3s ease;
+.character-svg-man {
+  width: 50vw;
+  height: 50vw;
+  position: absolute;
+  left: -12%;
+  top: 50%;
 }
 
 .character-svg:hover {
@@ -172,16 +170,44 @@
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
-.groep.bevers {
-  border-color: #ff6b6b;
+.bevers {
+  background-color: red;
+  border-radius: 10vw;
+  width: 9vw;
+  height: 2.7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beverText{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.beverText h2 {
+  color: red;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.bevers a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: bold;
 }
 
 .groep.scouts {
-  border-color: #ffa726;
+  border-color: black;
 }
 
 .groep.welpen {
-  border-color: #66bb6a;
+  border-color: black;
 }
 
 .groep-image {
@@ -252,6 +278,14 @@
   margin: 50px 20px;
   border-radius: 30px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.animal {
+  background-color: white;
+  width: 20vw;
+  height: 13vw;
+  border-radius: 1vw;
+  border: 5px solid;
 }
 
 .beelden-content {
