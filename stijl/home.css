@@ -36,7 +36,7 @@
 
 .homeButton {
   display: inline-block;
-  background: rgba(109, 59, 126, 0.7);
+  background: rgba(109, 59, 126, 0.85);
   color: white;
   padding: 15px 35px;
   text-decoration: none;
@@ -50,6 +50,14 @@
   font-size: 1.1em;
   text-transform: uppercase;
   letter-spacing: 1px;
+  transition: background 0.25s ease-in-out, box-shadow 0.25s ease-in-out ;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.homeButton:hover{
+background: rgba(109, 59, 126, 1);
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+
 }
 
 .hero p {
@@ -260,12 +268,12 @@
   font-size: 2.8em;
   margin-bottom: 50px;
   font-weight: 900;
-  width: 100%;
   justify-content: start;
 }
 
 .text-beeld{
   margin-left: 8.5%;
+  width: 90%;
 }
 
 .beelden-grid {
@@ -277,9 +285,6 @@
 }
 
 .logo-wit-trans {
-  
- 
- 
   opacity: 50%;
 }
 

@@ -1,101 +1,56 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Die Wiltgraeff</title>
-  <link rel="stylesheet" href="stijl/header.css">
-  <link rel="stylesheet" href="stijl/contact.css">
-  <link rel="stylesheet" href="stijl/footer.css">
-  <script src="js/header.js"></script>
-  <script src="js/footer.js" defer></script>
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Die Wiltgraeff - Scouting Wageningen</title>
+  <link rel="stylesheet" href="stijl/header.css" />
+
+    <link rel="stylesheet" href="stijl/footer.css" />
+    <link rel="stylesheet" href="stijl/contact.css">
+    <script src="js/header.js"></script>
+    <script src="js/footer.js" defer></script>
+  </head>
 <body>
 
-  <div class="page-container">
-    <h1>Contact</h1>
+  <div class="page-container-contact">
+    <h1 class="contact-h1">Contact</h1>
     
     <div class="contact-form">
-      <h2 style="color: #572c88; margin-bottom: 20px;">Stuur ons een bericht</h2>
-      
+     
+      <div class="white-horizontal"><img src="./afbeeldingen/small-white-logo.svg" alt=""></div>
       <form>
         <div class="form-group">
-          <label for="naam">Naam</label>
+          <label for="reden">Waarvoor wilt u contact opnemen?</label>
+          <input type="text" id="reden" name="reden" required>
+        </div>
+
+        <div class="form-group">
+          <label for="naam">Uw naam:</label>
           <input type="text" id="naam" name="naam" required>
         </div>
         
         <div class="form-group">
-          <label for="email">Email</label>
+          <label for="email">Uw e-mailadres:</label>
           <input type="email" id="email" name="email" required>
         </div>
         
         <div class="form-group">
-          <label for="telefoon">Telefoon</label>
-          <input type="tel" id="telefoon" name="telefoon">
+          <label for="onderwerp">Onderwerp:</label>
+          <input type="text" id="onderwerp" name="onderwerp">
         </div>
         
-        <div class="form-group">
-          <label for="onderwerp">Onderwerp</label>
-          <input type="text" id="onderwerp" name="onderwerp" required>
-        </div>
         
         <div class="form-group">
-          <label for="bericht">Bericht</label>
+          <label for="bericht"> Je bericht:</label>
           <textarea id="bericht" name="bericht" rows="6" required></textarea>
         </div>
         
-        <button type="submit" class="button">Verstuur bericht</button>
+        <button type="submit" class="button-contact">Verzenden</button>
       </form>
     </div>
 
-    <div class="contact-info">
-      <div class="info-card">
-        <h3>📍 Adres</h3>
-        <p>Scoutinggebouw Die Wiltgraeff<br>
-        Bornsesteeg 4<br>
-        6708 PE Wageningen</p>
-      </div>
-      
-      <div class="info-card">
-        <h3>📧 Email</h3>
-        <p>info@diewiltgraeff.nl<br>
-        groepsleiding@diewiltgraeff.nl</p>
-      </div>
-      
-      <div class="info-card">
-        <h3>📱 Telefoon</h3>
-        <p>Groepsleiding:<br>
-        06 12 34 56 78<br><br>
-        Verhuur:<br>
-        06 98 76 54 32</p>
-      </div>
-      
-      <div class="info-card">
-        <h3>🕒 Activiteiten</h3>
-        <p><strong>Bevers (5-7 jaar):</strong><br>
-        Zaterdag 10:00 - 11:30<br><br>
-        <strong>Welpen (7-11 jaar):</strong><br>
-        Zaterdag 14:00 - 16:00<br><br>
-        <strong>Scouts (11-15 jaar):</strong><br>
-        Vrijdag 19:30 - 21:30</p>
-      </div>
-      
-      <div class="info-card">
-        <h3>🌐 Social Media</h3>
-        <p>Volg ons voor de laatste updates!<br><br>
-        📘 Facebook: Die Wiltgraeff<br>
-        📸 Instagram: @diewiltgraeff<br>
-        📧 Nieuwsbrief: Meld je aan!</p>
-      </div>
-      
-      <div class="info-card">
-        <h3>🏦 Contributie</h3>
-        <p><strong>Bevers:</strong> €8,- per maand<br>
-        <strong>Welpen:</strong> €10,- per maand<br>
-        <strong>Scouts:</strong> €12,- per maand<br><br>
-        <em>Inclusief activiteiten en materiaal</em></p>
-      </div>
-    </div>
+
   </div>
 
   

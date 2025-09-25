@@ -2,16 +2,29 @@
 
 /* Contact form styles */
 .contact-form {
-  background-color: #f8f9fa;
-  padding: 30px;
+  background-color: #663399;
   border-radius: 15px;
   margin-bottom: 30px;
-  border-left: 5px solid #663399;
+  color: white;
+  width: 60%;
+  padding-bottom: 5rem;
 }
 
-.contact-form h2 {
-  color: #663399;
-  margin-bottom: 20px;
+.page-container-contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../afbeeldingen/Foto\ 16-05-2020\ 15\ 25\ 46.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+.white-horizontal {
+  width: 60%;
+  margin-left: 15%;
 }
 
 .form-group {
@@ -21,17 +34,44 @@
 .form-group label {
   display: block;
   margin-bottom: 5px;
-  color: #333;
   font-weight: bold;
+  margin-left: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.button-contact {
+  border-radius: 3rem;
+  height: 2rem;
+  width: 7rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin: auto;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; 
+  border: none; 
+}
+
+.button-contact:hover{
+  background-color: rgb(39, 5, 55);
+  
+ 
 }
 
 .form-group input,
 .form-group textarea,
 .form-group select {
-  width: 100%;
+  width: 45vw;
   padding: 12px;
   border: 2px solid #ddd;
-  border-radius: 8px;
+  border-radius: 2rem;
   font-family: inherit;
   font-size: 16px;
   transition: border-color 0.3s ease;
@@ -46,11 +86,11 @@
 
 .form-group textarea {
   resize: vertical;
-  min-height: 120px;
+  height: 4rem;
 }
 
 .submit-btn {
-  background: linear-gradient(135deg, #663399, #8B4A9C);
+  background: linear-gradient(135deg, #663399, #8b4a9c);
   color: white;
   padding: 12px 30px;
   border: none;
@@ -63,11 +103,6 @@
   letter-spacing: 1px;
 }
 
-.submit-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 51, 153, 0.3);
-}
-
 /* Contact info styles */
 .contact-info {
   background-color: #f8f9fa;
@@ -78,7 +113,6 @@
 }
 
 .contact-info h3 {
-  color: #663399;
   margin-bottom: 15px;
 }
 
@@ -88,13 +122,13 @@
   margin-bottom: 15px;
   padding: 10px;
   background-color: white;
-  border-radius: 8px;
+  border-radius: 10rem;
 }
 
 .contact-icon {
   width: 40px;
   height: 40px;
-  background: linear-gradient(135deg, #663399, #8B4A9C);
+  background: linear-gradient(135deg, #663399, #8b4a9c);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -109,7 +143,6 @@
 }
 
 .contact-details strong {
-  color: #663399;
   display: block;
   margin-bottom: 5px;
 }
@@ -130,8 +163,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #666;
+
   font-size: 18px;
+}
+
+.contact-h1 {
+  color: #663399;
+  font-size: 3.5rem;
+  padding-bottom: 2rem;
 }
 
 /* Contact page responsive design */
@@ -140,7 +179,7 @@
     flex-direction: column;
     text-align: center;
   }
-  
+
   .contact-icon {
     margin-right: 0;
     margin-bottom: 10px;
