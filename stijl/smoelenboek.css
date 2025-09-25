@@ -1,6 +1,3 @@
-/* Smoelenboek page specific styles (smoelenboek.html) */
-
-/* Smoelenboek styles */
 .smoelenboek {
   background-color: white;
   margin: 20px auto;
@@ -13,6 +10,7 @@
 .smoelenboek h1 {
   color: #663399;
   font-size: 2.5em;
+  padding-top: 100px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -49,28 +47,28 @@
 
 .foto-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0px;
+  grid-template-columns: repeat(auto-fit, 260px);
+  justify-content: start; 
+  gap: 20px;
   margin-bottom: 40px;
 }
 
-/* Reduce space above the first row */
+
 .smoelenboek .groep-titel.rood {
-  margin-top: 10px; /* was 40px */
+  margin-top: 10px; 
 }
 
 .smoelenboek .groep-titel.rood + .foto-grid {
   margin-top: 10px;
-  gap: 20px 0px; /* 20px vertical, 8px horizontal */
 }
 
 .persoon {
   background-color: #f8f9fa;
-  padding: 10px; /* was 20px */
+  padding: 10px; 
   border-radius: 10px;
   text-align: center;
   border: 2px solid #663399;
-  width: 260px;
+  width: 100%; 
   aspect-ratio: 1 / 1;
   display: flex;
   flex-direction: column;
@@ -96,7 +94,6 @@
   line-height: 1.6;
 }
 
-/* Banner styles */
 .banner-container {
   position: relative;
   width: 100%;
@@ -133,7 +130,6 @@
   font-weight: normal;
 }
 
-/* Smoelenboek responsive design */
 @media (max-width: 768px) {
   .foto-grid {
     grid-template-columns: 1fr;
