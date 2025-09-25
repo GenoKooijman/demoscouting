@@ -4,7 +4,7 @@
 .hero {
   background: url("../afbeeldingen/Foto 16-05-2020 15 18 55.jpg") center/cover;
 
-  height: 100vh;
+  height: 50rem;
   display: flex;
 
   position: relative;
@@ -17,6 +17,7 @@
   flex-direction: column;
   width: 30%;
   justify-content: start;
+  padding-left: 5rem;
 }
 
 .hero h1 {
@@ -66,34 +67,10 @@
 
   text-align: center;
 }
-    
+
 .groepen-content {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.mascot {
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(135deg, #8b4a9c, #6b3a7c);
-  border-radius: 50%;
-  margin: 0 auto 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3em;
-  box-shadow: 0 10px 30px rgba(139, 74, 156, 0.3);
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
 }
 
 .join-button {
@@ -117,29 +94,19 @@
   box-shadow: 0 8px 25px rgba(255, 152, 0, 0.5);
 }
 
-.groepen h2 {
-  color: #6b3a7c;
-  font-size: 3em;
-  margin-bottom: 40px;
-  font-weight: 900;
+.groeph2 {
+  color: white;
+  font-size: xx-large;
 }
 
 /* SVG Characters positioned exactly like reference */
-.svg-characters r {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 60px;
-  margin: 40px 0 60px 0;
-  position: relative;
-}
 
 .character-svg-man {
   width: 50vw;
   height: 50vw;
   position: absolute;
   left: -12%;
-  top: 50%;
+  top: 70%;
 }
 
 .character-svg:hover {
@@ -150,19 +117,9 @@
 .groep-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
+  gap: 10px;
 
-.groep {
-  background: white;
-  border-radius: 20px;
-  width: 280px;
-  overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border: 3px solid transparent;
+  margin-top: 40px;
 }
 
 .groep:hover {
@@ -172,7 +129,7 @@
 
 .bevers {
   background-color: red;
-  border-radius: 10vw;
+  border-radius: 30vw;
   width: 9vw;
   height: 2.7vw;
   display: flex;
@@ -180,17 +137,27 @@
   align-items: center;
 }
 
-.beverText{
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    font-size: x-large;
+.beverText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  color: white;
+  gap: 1vw;
 }
 
 .beverText h2 {
   color: red;
   text-align: center;
   font-size: xx-large;
+}
+
+.animal-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
 }
 
 .bevers a {
@@ -220,11 +187,6 @@
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
 }
 
-.groep-content {
-  padding: 25px;
-  text-align: center;
-}
-
 .groep h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
@@ -240,7 +202,7 @@
 
 .groep-button {
   padding: 10px 25px;
-  border-radius: 20px;
+  border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
   color: white;
@@ -275,21 +237,20 @@
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   padding: 80px 20px;
-  margin: 50px 20px;
-  border-radius: 30px;
+
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
 }
 
 .animal {
   background-color: white;
-  width: 20vw;
-  height: 13vw;
-  border-radius: 1vw;
+  width: 27vw;
+  height: 17vw;
+  border-radius: 3vw;
   border: 5px solid;
 }
 
 .beelden-content {
-  max-width: 1200px;
+  max-width: 100000rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -299,29 +260,39 @@
   font-size: 2.8em;
   margin-bottom: 50px;
   font-weight: 900;
+  width: 100%;
+  justify-content: start;
+}
+
+.text-beeld{
+  margin-left: 8.5%;
 }
 
 .beelden-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
   margin-top: 30px;
+  justify-content: center;
+}
+
+.logo-wit-trans {
+  
+ 
+ 
+  opacity: 50%;
+}
+
+.logo-wit-trans img {
+  position:absolute;
+  top: 32%;
+  left: 30%;
 }
 
 .beelden img {
-  width: 100%;
-  height: 220px;
+  
+  width: 40%;
   object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border: 3px solid transparent;
-}
-
-.beelden img:hover {
-  transform: scale(1.05) translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-  border-color: #8b4a9c;
 }
 
 /* Home page responsive design */
