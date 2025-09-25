@@ -14,6 +14,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  bottom: 0; /* mooi tegen de onderkant */
 }
 
 .footer-logo-circle {
@@ -38,12 +39,11 @@
   position: relative;
 }
 
-.footer-mascot {
-  height: 600px;
-  width: auto;
+.footer-right .footer-mascot {
+  height: 400px;
   transform: scaleX(-1);
   position: absolute;
-  top: -1000%;
+  top: 0;
   right: 0;
 }
 
