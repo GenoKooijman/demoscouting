@@ -4,7 +4,9 @@
       <div class="logo-icon-container">
         <img src="afbeeldingen/Logo Die Wiltgraeff_Wit_Icoon.svg" alt="Die Wiltgraeff Logo" class="logo-svg">
       </div>
-      <div class="logo-text">Die Wiltgraeff</div>
+      <a href="index.html" class="logo-link" aria-label="Ga naar de homepagina">
+        <div class="logo-text">Die Wiltgraeff</div>
+      </a>
     </div>
     <nav>
       <a href="index.html" id="nav-home">Home</a>
@@ -18,14 +20,11 @@
 </header>
 
 <script>
-// JavaScript to highlight the current page in navigation
 document.addEventListener('DOMContentLoaded', function() {
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   
-  // Remove .html extension for comparison
   const pageName = currentPage.replace('.html', '');
   
-  // Add active class to current page navigation item
   const navItem = document.getElementById('nav-' + (pageName || 'home'));
   if (navItem) {
     navItem.classList.add('active');
