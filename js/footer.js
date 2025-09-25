@@ -1,5 +1,8 @@
 // js/footer.js
 document.addEventListener("DOMContentLoaded", function () {
+  // Avoid duplicate insertion if script runs multiple times
+  if (document.querySelector(".scout-footer")) return;
+
   fetch("includes/footer.html")
     .then((response) => response.text())
     .then((data) => {
