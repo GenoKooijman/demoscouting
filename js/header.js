@@ -14,6 +14,8 @@ async function loadHeader() {
     
     // After header is loaded, highlight current page
     highlightCurrentPage();
+
+  // Sticky header participates in layout; no padding adjustments needed
   } catch (error) {
     console.error('Error loading header:', error);
     // Fallback: create header manually if file can't be loaded
@@ -78,4 +80,5 @@ function createFallbackHeader() {
   
   document.body.insertAdjacentHTML('afterbegin', headerHTML);
   highlightCurrentPage();
+  // No padding adjustments needed for sticky header
 }

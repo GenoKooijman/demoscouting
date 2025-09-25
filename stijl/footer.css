@@ -4,17 +4,21 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 40px 60px 20px;
+  padding: 0 40px 12px;             
+  height: 80px;                    
   position: relative;
+  z-index: 10;                  
   margin-top: 100px;
-  overflow: visible; /* belangrijk! zorgt dat het poppetje erbovenuit mag steken */
+  --mascot-raise: -70%;
+  --logo-raise: -100%;
 }
 
 .footer-center {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  bottom: 0; /* mooi tegen de onderkant */
+  top: 0;                         
+  transform: translateX(-50%);       
+  z-index: 20;                       
 }
 
 .footer-logo-circle {
@@ -25,6 +29,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  transform: translateY(var(--logo-raise)); 
 }
 
 .footer-logo-circle img {
@@ -36,19 +42,30 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  position: relative;
+  position: static;  /* allow mascot to anchor to .scout-footer instead */
 }
 
 .footer-right .footer-mascot {
   height: 400px;
-  transform: scaleX(-1);
   position: absolute;
-  top: 0;
+  top: 0;                   
   right: 0;
+  transform: translateY(var(--mascot-raise)) scaleX(-1); 
+  z-index: 20;                      
+  pointer-events: none; 
 }
+
 
 .footer-left p {
   margin: 0;
+  position: relative;
+  z-index: 25; /* ensure text sits above mascot if they overlap slightly */
+}
+
+.footer-right p {
+  margin: 0;
+  position: relative;
+  z-index: 25; /* ensure text sits above mascot if they overlap slightly */
 }
 
 .footer-bottom {
@@ -57,4 +74,18 @@
   color: white;
   font-size: 14px;
   padding-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .footer-logo-circle { width: 120px; height: 120px; }
+  .footer-right .footer-mascot { height: 300px; }
+}
+
+@media (max-width: 600px) {
+  .scout-footer { padding: 0 20px 10px; height: 70px; }
+  .scout-footer { --mascot-raise: -50%; } /* a bit less raise on small screens */
+  .scout-footer { --logo-raise: -50%; }   /* ensure exactly half outside on mobile */
+  .footer-logo-circle { width: 100px; height: 100px; }
+  .footer-right .footer-mascot { height: 220px; }
 }

@@ -11,18 +11,20 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: rgba(109, 59, 126);
   min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 /* Prevent any accidental horizontal scrolling */
 html, body {
   max-width: 100%;
-  overflow-x: hidden;
 }
+/* Prevent nested scroll containers: let only the root (html) scroll vertically */
+/* Use default vertical scrolling; only guard horizontal overflow above */
 
 /* Header exactly like reference */
 header {
   background: rgba(109, 59, 126);
-  backdrop-filter: blur(10px);
   padding: 15px 0;
   color: white;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
@@ -124,17 +126,7 @@ nav a {
   display: inline-flex;          /* align text and caret consistently */
   align-items: center;           /* vertically center contents within link */
 }
-
-<<<<<<< HEAD:stijl/base.css
-nav a:hover,
-nav a.active {
-  background: linear-gradient(135deg, #8b4a9c, #6b3a7c);
-
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(139, 74, 156, 0.3);
-}
-
-=======
+ 
 /* Hover: white underline only, no color change */
 nav a:hover {
   text-decoration: underline;
@@ -203,8 +195,7 @@ nav a.active {
   background: rgba(255,255,255,0.15);
   text-decoration: none;
 }
-
->>>>>>> 83a9fe9a3403adb67823e9cfe3e79228321af4c7:stijl/header.css
+ 
 .page-container {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -253,16 +244,7 @@ nav a.active {
   nav {
     flex-wrap: wrap;
     justify-content: center;
-<<<<<<< HEAD:stijl/base.css
-    gap: 15px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
-=======
     gap: 15px;  
->>>>>>> 83a9fe9a3403adb67823e9cfe3e79228321af4c7:stijl/header.css
   }
 
   .page-container {
