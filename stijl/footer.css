@@ -1,5 +1,5 @@
 .scout-footer {
-  background-color: #643a90;
+  background: rgba(109, 59, 126);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -7,17 +7,17 @@
   padding: 40px 60px 20px;
   position: relative;
   margin-top: 100px;
+  overflow: visible; /* belangrijk! zorgt dat het poppetje erbovenuit mag steken */
 }
 
 .footer-center {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 20px;
 }
 
 .footer-logo-circle {
-  background-color: #643a90;
+  background: rgba(109, 59, 126);
   border-radius: 50%;
   width: 160px;
   height: 160px;
@@ -31,8 +31,20 @@
   height: auto;
 }
 
-.footer-right .footer-mascot {
-  height: 120px;
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+
+.footer-mascot {
+  height: 600px;
+  width: auto;
+  transform: scaleX(-1);
+  position: absolute;
+  top: -1000%;
+  right: 0;
 }
 
 .footer-left p {
@@ -40,7 +52,7 @@
 }
 
 .footer-bottom {
-  background-color: #643a90;
+  background: rgba(109, 59, 126);
   text-align: center;
   color: white;
   font-size: 14px;
